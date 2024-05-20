@@ -1,47 +1,48 @@
-const readXlsxFile = require("read-excel-file/node");
+const ExcelJS = require("exceljs");
+const fs = require("fs");
 
-const schema = {
-  Tipo: {
-    prop: "Tipo",
-    type: String,
-  },
-  Enunciado: {
-    prop: "Enunciado",
-    type: String,
-  },
-  ImagemEnunciado: {
-    prop: "Imagem Enunciado",
-    type: String,
-  },
-  Resposta: {
-    prop: "Resposta",
-    type: String,
-  },
-  "Opção A / Imagem A": {
-    prop: "Opção A",
-    type: String,
-  },
-  "Opção B / Imagem B": {
-    prop: "Opção B",
-    type: String,
-  },
-  "Opção C / Imagem C": {
-    prop: "Opção C",
-    type: String,
-  },
-  "Opção D / Imagem D": {
-    prop: "Opção D",
-    type: String,
-  },
-};
+// Carregar o arquivo Excel
+const workbook = new ExcelJS.Workbook();
+workbook.xlsx
+  .readFile("./ModeloCreatorAuthor.xlsx")
+  .then(() => {
+    // Assume que o arquivo tem apenas uma planilha, caso contrário, você precisará iterar sobre as planilhas
+    const worksheet = workbook.getWorksheet(1);
 
-// File path.
-readXlsxFile("./ModeloCreatorAuthor.xlsx", { schema }).then(
-  ({ rows, errors }) => {
-    console.log(rows);
-  }
-);
+    // Converter os dados da planilha para JSON
+    const jsonData = [];
+    worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {
+      if (rowNumber !== 1) {
+        const rowData = {};
+        row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+          rowData[`col${colNumber}`] = cell.value;
+        });
+        jsonData.push(rowData);
+      }
+    });
 
-// readXlsxFile("./ModeloCreatorAuthor.xlsx").then((rows) => {
-//     console.log(rows)
-// });
+    // Filtrar as linhas com base no valor da coluna "tipo"
+    const filteredJson = jsonData.filter((row) => {
+      return row.col1 !== null; // Manter a linha se o valor da coluna "tipo" não for null
+    });
+
+    // Transformar o JSON filtrado em um formato ajustado
+    const adjustedJson = filteredJson.map((row) => ({
+      tipo: row.col1,
+      enunciado: row.col2,
+      imagemEnunciado: row.col3,
+      resposta: row.col4,
+      opcaoA: row.col5,
+      opcaoB: row.col6,
+      opcaoC: row.col7,
+      opcaoD: row.col8,
+      // Adicione mais campos conforme necessário
+    }));
+
+    // Salvar os dados em um arquivo JSON
+    fs.writeFileSync("dados.json", JSON.stringify(adjustedJson, null, 4));
+    console.log("Arquivo JSON gerado com sucesso!");
+  })
+  .catch((error) => {
+    console.error("Erro ao ler o arquivo Excel:", error);
+  });

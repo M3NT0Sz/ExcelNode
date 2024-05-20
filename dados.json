@@ -1,0 +1,24 @@
+[
+    {
+        "tipo": "Multipla Escolha",
+        "enunciado": "Quanto é 2 + 2?",
+        "imagemEnunciado": {
+            "error": "#VALUE!"
+        },
+        "resposta": "B",
+        "opcaoA": 2,
+        "opcaoB": 4,
+        "opcaoC": 6,
+        "opcaoD": 8
+    },
+    {
+        "tipo": "Preenchimento",
+        "enunciado": "Batata",
+        "imagemEnunciado": null,
+        "resposta": "a",
+        "opcaoA": null,
+        "opcaoB": null,
+        "opcaoC": null,
+        "opcaoD": null
+    }
+]

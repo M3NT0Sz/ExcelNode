@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "exceljs": "^4.4.0",
     "read-excel-file": "^5.8.1"
   }
 }
