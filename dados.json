@@ -1,24 +1,30 @@
-[
-    {
-        "tipo": "Multipla Escolha",
-        "enunciado": "Quanto é 2 + 2?",
-        "imagemEnunciado": {
-            "error": "#VALUE!"
+{
+    "licao": [
+        {
+            "multiplaEscolha": {
+                "tipo": "Multipla Escolha",
+                "enunciado": "Quanto é 2 + 2?",
+                "resposta": "B",
+                "opcoes": {
+                    "opcaoA": 2,
+                    "opcaoB": 4,
+                    "opcaoC": 6,
+                    "opcaoD": 8
+                }
+            }
         },
-        "resposta": "B",
-        "opcaoA": 2,
-        "opcaoB": 4,
-        "opcaoC": 6,
-        "opcaoD": 8
-    },
-    {
-        "tipo": "Preenchimento",
-        "enunciado": "Batata",
-        "imagemEnunciado": null,
-        "resposta": "a",
-        "opcaoA": null,
-        "opcaoB": null,
-        "opcaoC": null,
-        "opcaoD": null
-    }
-]
+        {
+            "preenchimento": {
+                "tipo": "Preenchimento",
+                "enunciado": "Batata",
+                "resposta": "a"
+            }
+        },
+        {
+            "preenchimento": {
+                "tipo": "Preenchimento"
+            }
+        },
+        {}
+    ]
+}

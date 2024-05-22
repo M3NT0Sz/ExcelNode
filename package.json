@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "exceljs": "^4.4.0",
-    "read-excel-file": "^5.8.1"
+    "read-excel-file": "^5.8.1",
+    "xlsx": "^0.18.5"
   }
 }
