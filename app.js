@@ -34,8 +34,6 @@ workbook.xlsx.readFile("./ModeloCreatorAuthor.xlsx")
             }
             break;
           case 3:
-            break;
-          case 4:
             if (rowData.multiplaEscolha) {
               rowData.multiplaEscolha.resposta = cell.value;
             }
@@ -43,22 +41,22 @@ workbook.xlsx.readFile("./ModeloCreatorAuthor.xlsx")
               rowData.preenchimento.resposta = cell.value;
             }
             break;
-          case 5:
+          case 4:
             if (rowData.multiplaEscolha) {
               rowData.multiplaEscolha.opcoes = { opcaoA: cell.value };
             }
             break;
-          case 6:
+          case 5:
             if (rowData.multiplaEscolha) {
               rowData.multiplaEscolha.opcoes.opcaoB = cell.value;
             }
             break;
-          case 7:
+          case 6:
             if (rowData.multiplaEscolha) {
               rowData.multiplaEscolha.opcoes.opcaoC = cell.value;
             }
             break;
-          case 8:
+          case 7:
             if (rowData.multiplaEscolha) {
               rowData.multiplaEscolha.opcoes.opcaoD = cell.value;
             }
