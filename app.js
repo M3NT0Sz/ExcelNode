@@ -1,37 +1,71 @@
 const XLSX = require("xlsx");
 const fs = require("fs");
 
-// Ler o arquivo Excel
-const workbook = XLSX.readFile("./ModeloCreatorAuthor.xlsx");
+// Ler o arquivo Excel com exceljs
+const workbook = new ExcelJS.Workbook();
+workbook.xlsx.readFile("./ModeloCreatorAuthor.xlsx")
+  .then(() => {
+    const worksheet = workbook.getWorksheet(1); // Obter a primeira planilha
 
-// Obter a primeira planilha
-const sheetName = workbook.SheetNames[0];
-const worksheet = workbook.Sheets[sheetName];
+    const jsonData = {
+      "licao": []
+    };
 
-// Converter a planilha para JSON
-const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+    // Iterar sobre as linhas da planilha, começando da segunda linha para evitar a primeira linha (cabeçalho)
+    for (let i = 2; i <= worksheet.rowCount; i++) {
+      const rowData = {};
 
-// Obter cabeçalhos e linhas
-const headers = jsonData[0];
-const rows = jsonData.slice(1);
+      // Iterar sobre as células da linha
+      worksheet.getRow(i).eachCell((cell, colIndex) => {
+        switch (colIndex) {
+          case 1:
+            if (cell.value === "Multipla Escolha") {
+              rowData.multiplaEscolha = { tipo: cell.value };
+            } else if (cell.value === "Preenchimento") {
+              rowData.preenchimento = { tipo: cell.value };
+            }
+            break;
+          case 2:
+            if (rowData.multiplaEscolha) {
+              rowData.multiplaEscolha.enunciado = cell.value;
+            }
+            if (rowData.preenchimento) {
+              rowData.preenchimento.enunciado = cell.value;
+            }
+            break;
+          case 3:
+            if (rowData.multiplaEscolha) {
+              rowData.multiplaEscolha.resposta = cell.value;
+            }
+            if (rowData.preenchimento) {
+              rowData.preenchimento.resposta = cell.value;
+            }
+            break;
+          case 4:
+            if (rowData.multiplaEscolha) {
+              rowData.multiplaEscolha.opcoes = { opcaoA: cell.value };
+            }
+            break;
+          case 5:
+            if (rowData.multiplaEscolha) {
+              rowData.multiplaEscolha.opcoes.opcaoB = cell.value;
+            }
+            break;
+          case 6:
+            if (rowData.multiplaEscolha) {
+              rowData.multiplaEscolha.opcoes.opcaoC = cell.value;
+            }
+            break;
+          case 7:
+            if (rowData.multiplaEscolha) {
+              rowData.multiplaEscolha.opcoes.opcaoD = cell.value;
+            }
+            break;
+        }
+      });
 
-// Filtrar linhas onde o primeiro valor (tipo) não é nulo
-const filteredJson = rows.filter((row) => row[0] !== null);
+      // Adicionar o objeto de dados ao array de dados
+      jsonData.licao.push(rowData);
+    }
 
-// Mapear as linhas para o formato desejado
-const adjustedJson = filteredJson.map((row) => ({
-  tipo: row[0],
-  enunciado: row[1],
-  resposta: row[3],
-  opcaoA: row[4],
-  opcaoB: row[5],
-  opcaoC: row[6],
-  opcaoD: row[7],
-}));
-
-// Remover objetos vazios ou com todas as propriedades indefinidas
-const finalJson = adjustedJson.filter(obj => Object.values(obj).some(val => val !== undefined && val !== null));
-
-// Salvar os dados em um arquivo JSON
-fs.writeFileSync("dados.json", JSON.stringify(finalJson, null, 4));
-console.log("Arquivo JSON gerado com sucesso!");
+ 

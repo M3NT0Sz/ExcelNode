@@ -4,24 +4,24 @@
             "multiplaEscolha": {
                 "tipo": "Multipla Escolha",
                 "enunciado": "Quanto é 2 + 2?",
+                "resposta": "B",
                 "opcoes": {
-                    "opcaoA": "B",
-                    "opcaoB": 2,
-                    "opcaoC": 4,
-                    "opcaoD": 6
+                    "opcaoA": 2,
+                    "opcaoB": 4,
+                    "opcaoC": 6,
+                    "opcaoD": 8
                 }
             }
         },
         {
             "preenchimento": {
                 "tipo": "Preenchimento",
-                "enunciado": "Batata"
+                "enunciado": "Batata",
+                "resposta": "a"
             }
         },
         {
-            "preenchimento": {
-                "tipo": "Preenchimento"
-            }
+            "tipo": "Preenchimento"
         },
         {}
     ]
