@@ -1,0 +1,18 @@
+[
+  {
+    "Tipo": "Multipla Escolha",
+    "Enunciado": "Quanto é 2 + 2?",
+    "Resposta": "B",
+    "opcoes": {
+      "Opção A": 2,
+      "Opção B": 4,
+      "Opção C": 6,
+      "Opção D": 8
+    }
+  },
+  {
+    "Tipo": "Preenchimento",
+    "Enunciado": "Batata",
+    "Resposta": "a"
+  }
+]
