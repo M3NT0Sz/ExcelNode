@@ -1,0 +1,25 @@
+[
+  {
+    "tipo": "Multipla Escolha",
+    "enunciado": "Quanto é 2 + 2?",
+    "resposta": "B",
+    "opcaoA": "2",
+    "opcaoB": "4",
+    "opcaoC": "6",
+    "opcaoD": "8"
+  },
+  {
+    "tipo": "Preenchimento",
+    "enunciado": "Traduza pineapple?",
+    "resposta": "Abacaxi"
+  },
+  {
+    "tipo": "Organizar",
+    "enunciado": "Organize a palavra corretamente:",
+    "resposta": "Abacaxi",
+    "opcaoA": "A",
+    "opcaoB": "CA",
+    "opcaoC": "BA",
+    "opcaoD": "XI"
+  }
+]
