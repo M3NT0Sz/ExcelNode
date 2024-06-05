@@ -1,28 +1,3 @@
 {
-    "licao": [
-        {
-            "multiplaEscolha": {
-                "tipo": "Multipla Escolha",
-                "enunciado": "Quanto é 2 + 2?",
-                "opcoes": {
-                    "opcaoA": "B",
-                    "opcaoB": 2,
-                    "opcaoC": 4,
-                    "opcaoD": 6
-                }
-            }
-        },
-        {
-            "preenchimento": {
-                "tipo": "Preenchimento",
-                "enunciado": "Batata"
-            }
-        },
-        {
-            "preenchimento": {
-                "tipo": "Preenchimento"
-            }
-        },
-        {}
-    ]
+  "Sheet1": []
 }
