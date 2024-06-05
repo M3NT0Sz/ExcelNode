@@ -1,0 +1,43 @@
+[
+  {
+    "Tipo": "Tipo",
+    "Enunciado": "Enunciado",
+    "Resposta": "Resposta",
+    "OpcaoA": "Opção A",
+    "OpcaoB": "Opção B",
+    "OpcaoC": "Opção C",
+    "OpcaoD": "Opção D"
+  },
+  {
+    "Tipo": "Multipla Escolha",
+    "Enunciado": "Quanto é 2 + 2?",
+    "Resposta": "B",
+    "OpcaoA": 2,
+    "OpcaoB": 4,
+    "OpcaoC": 6,
+    "OpcaoD": 8
+  },
+  {
+    "Tipo": "Preenchimento",
+    "Enunciado": "Traduza pineapple?",
+    "Resposta": "Abacaxi"
+  },
+  {
+    "Tipo": "Organizar",
+    "Enunciado": "Organize a palavra corretamente:",
+    "Resposta": "Abacaxi",
+    "OpcaoA": "A",
+    "OpcaoB": "CA",
+    "OpcaoC": "BA",
+    "OpcaoD": "XI"
+  },
+  {
+    "Tipo": "Selecionar Imagem",
+    "Enunciado": "Selecione a Imagem"
+  },
+  {},
+  {},
+  {},
+  {},
+  {}
+]

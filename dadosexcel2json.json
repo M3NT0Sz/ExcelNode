@@ -1,0 +1,36 @@
+{
+  "licao": [
+    {
+      "tipo": "Tipo",
+      "enunciado": "Enunciado",
+      "resposta": "Resposta"
+    },
+    {
+      "tipo": "Multipla Escolha",
+      "enunciado": "Quanto é 2 + 2?",
+      "resposta": "B",
+      "opcoes": {
+        "opcaoA": 2,
+        "opcaoB": 4,
+        "opcaoC": 6,
+        "opcaoD": 8
+      }
+    },
+    {
+      "tipo": "Preenchimento",
+      "enunciado": "Traduza pineapple?",
+      "resposta": "Abacaxi"
+    },
+    {
+      "tipo": "Organizar",
+      "enunciado": "Organize a palavra corretamente:",
+      "resposta": "Abacaxi"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+}
