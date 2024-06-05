@@ -8,11 +8,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "convert-excel-to-json": "^1.7.0",
     "exceljs": "^4.4.0",
     "read-excel-file": "^5.8.1",
     "xlsx-populate": "^1.21.0"
-  }
+  },
+  "description": ""
 }
