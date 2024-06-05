@@ -21,12 +21,10 @@ async function excelToJson(filePath, sheetName) {
                 OpcaoC: row[5],
                 OpcaoD: row[6]
             };
-            // Check for embedded image in any cell
-            const embeddedImage = getEmbeddedImage(worksheet, rowIndex + 1); // Corrigido para indexação baseada em 1
-            if (embeddedImage) {
-                const imageName = `image_${rowIndex}.png`;
-                fs.writeFileSync(imageName, embeddedImage);
-                rowData.Imagem = imageName; // Save image name
+            // Check for embedded image URL in any cell
+            const imageUrl = getEmbeddedImageUrl(worksheet, rowIndex + 1); // Corrigido para indexação baseada em 1
+            if (imageUrl) {
+                rowData.Imagem = imageUrl; // Save image URL
             }
             data.push(rowData);
         }
@@ -36,19 +34,22 @@ async function excelToJson(filePath, sheetName) {
     const json = JSON.stringify(data, null, 2);
 
     // Salva o JSON em um arquivo
-    fs.writeFileSync('data.json', json, 'utf8');
+    fs.writeFileSync('dataPopulate.json', json, 'utf8');
 
     console.log('Arquivo JSON criado com sucesso!');
 }
 
-// Função para obter imagem incorporada de uma linha
-function getEmbeddedImage(worksheet, rowIndex) {
-    const cell = worksheet.row(rowIndex).cell(1); // Corrigido para indexação baseada em 1
-    if (cell.hasImage()) {
-        return cell.image().toBuffer();
+// Função para obter URL de imagem incorporada de uma linha
+function getEmbeddedImageUrl(worksheet, rowIndex) {
+    const cell = worksheet.cell(rowIndex, 1); // Corrigido para indexação baseada em 1
+    if (cell._hyperlinks && cell._hyperlinks.length > 0) {
+        const hyperlink = cell._hyperlinks[0];
+        if (hyperlink.type === 'image') {
+            return hyperlink.url;
+        }
     }
     return null;
 }
 
 // Chama a função
-excelToJson('Modelo', 'Planilha1').catch(console.error);
+excelToJson('ModeloCreatorAuthor.xlsx', 'Planilha1').catch(console.error);
