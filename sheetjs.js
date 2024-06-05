@@ -1,73 +1,62 @@
 const XLSX = require("xlsx");
-const fs = require("fs").promises;
+const fs = require("fs");
+const ExcelJS = require("exceljs");
 
-// Função para remover propriedades com valores null de um objeto
+// Função para remover propriedades com valores null ou undefined de um objeto
 function removeNullProperties(obj) {
-  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v !== null));
+  return Object.fromEntries(
+    Object.entries(obj).filter(([_, v]) => v != null)
+  );
 }
 
-// Função para converter as opções em um único objeto "opcoes"
-function convertOptions(data) {
-  const options = {};
-  if (data["Opção A"] !== undefined) options["Opção A"] = data["Opção A"];
-  if (data["Opção B"] !== undefined) options["Opção B"] = data["Opção B"];
-  if (data["Opção C"] !== undefined) options["Opção C"] = data["Opção C"];
-  if (data["Opção D"] !== undefined) options["Opção D"] = data["Opção D"];
+// Ler o arquivo Excel com ExcelJS
+const workbook = new ExcelJS.Workbook();
+workbook.xlsx.readFile("./ModeloCreatorAuthor.xlsx")
+  .then(() => {
+    const worksheet = workbook.getWorksheet(1); // Obter a primeira planilha
 
-  delete data["Opção A"];
-  delete data["Opção B"];
-  delete data["Opção C"];
-  delete data["Opção D"];
+    const jsonData = {
+      "licao": []
+    };
 
-  if (Object.keys(options).length > 0) {
-    data.opcoes = options;
-  }
+    // Iterar sobre as linhas da planilha, começando da segunda linha para evitar a primeira linha (cabeçalho)
+    for (let i = 2; i <= worksheet.rowCount; i++) {
+      let rowData = {};
+      let tipo = worksheet.getRow(i).getCell(1).value;
+      
+      if (tipo === "Multipla Escolha") {
+        rowData = {
+          tipo: tipo,
+          enunciado: worksheet.getRow(i).getCell(2).value,
+          resposta: worksheet.getRow(i).getCell(3).value,
+          opcoes: {
+            opcaoA: worksheet.getRow(i).getCell(4).value,
+            opcaoB: worksheet.getRow(i).getCell(5).value,
+            opcaoC: worksheet.getRow(i).getCell(6).value,
+            opcaoD: worksheet.getRow(i).getCell(7).value
+          }
+        };
+        rowData.opcoes = removeNullProperties(rowData.opcoes);
+      } else if (tipo === "Preenchimento") {
+        rowData = {
+          tipo: tipo,
+          enunciado: worksheet.getRow(i).getCell(2).value,
+          resposta: worksheet.getRow(i).getCell(3).value
+        };
+      } else if (tipo )
 
-  return data;
-}
+      rowData = removeNullProperties(rowData);
 
-// Função para verificar se o arquivo Excel corresponde ao modelo esperado
-function verifyExcelFile(workbook) {
-  const expectedSheetName = "Planilha1"; // Nome esperado da planilha
+      // Adicionar o objeto de dados ao array de dados se não estiver vazio
+      if (Object.keys(rowData).length > 0) {
+        jsonData.licao.push(rowData);
+      }
+    }
 
-  // Verificar o nome da planilha
-  if (!workbook.Sheets[expectedSheetName]) {
-    throw new Error(
-      "O arquivo Excel não corresponde ao modelo esperado: nome da planilha incorreto."
-    );
-  }
-}
-
-// Função principal para ler o arquivo Excel e convertê-lo para JSON
-async function excelToJson(excelFilePath, jsonFilePath) {
-  try {
-    // Ler o arquivo Excel
-    const workbook = XLSX.readFile(excelFilePath);
-
-    // Verificar se o arquivo Excel corresponde ao modelo esperado
-    verifyExcelFile(workbook);
-
-    // Converter a planilha para JSON
-    const sheetName = "Planilha1";
-    const sheet = workbook.Sheets[sheetName];
-    let jsonData = XLSX.utils.sheet_to_json(sheet, { defval: null });
-
-    // Remover propriedades com valores null e converter opções
-    jsonData = jsonData.map((data) =>
-      convertOptions(removeNullProperties(data))
-    );
-
-    // Salvar o JSON formatado em um arquivo
-    await fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2));
-    console.log(`Arquivo JSON salvo em: ${jsonFilePath}`);
-  } catch (error) {
-    console.error(`Erro ao processar o arquivo: ${error.message}`);
-  }
-}
-
-// Caminho do arquivo Excel e do arquivo JSON de saída
-const excelFilePath = "./ModeloCreatorAuthor.xlsx";
-const jsonFilePath = "./dadosSheet.json";
-
-// Chamar a função para realizar a conversão
-excelToJson(excelFilePath, jsonFilePath);
+    // Escrever o JSON em um arquivo
+    fs.writeFileSync('dadosSheet.json', JSON.stringify(jsonData, null, 2));
+    console.log('Arquivo JSON salvo em dadosSheet.json');
+  })
+  .catch(err => {
+    console.error('Erro ao processar o arquivo:', err);
+  });
