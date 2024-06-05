@@ -1,18 +1,20 @@
-[
-  {
-    "Tipo": "Multipla Escolha",
-    "Enunciado": "Quanto é 2 + 2?",
-    "Resposta": "B",
-    "opcoes": {
-      "Opção A": 2,
-      "Opção B": 4,
-      "Opção C": 6,
-      "Opção D": 8
+{
+  "licao": [
+    {
+      "tipo": "Multipla Escolha",
+      "enunciado": "Quanto é 2 + 2?",
+      "resposta": "B",
+      "opcoes": {
+        "opcaoA": 2,
+        "opcaoB": 4,
+        "opcaoC": 6,
+        "opcaoD": 8
+      }
+    },
+    {
+      "tipo": "Preenchimento",
+      "enunciado": "Traduza pineapple?",
+      "resposta": "Abacaxi"
     }
-  },
-  {
-    "Tipo": "Preenchimento",
-    "Enunciado": "Batata",
-    "Resposta": "a"
-  }
-]
+  ]
+}
