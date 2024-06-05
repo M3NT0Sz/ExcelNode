@@ -15,6 +15,50 @@
       "tipo": "Preenchimento",
       "enunciado": "Traduza pineapple?",
       "resposta": "Abacaxi"
+    },
+    {
+      "tipo": "Organizar",
+      "enunciado": "Organize a palavra corretamente:",
+      "resposta": "Abacaxi",
+      "opcoes": {
+        "opcaoA": "A",
+        "opcaoB": "CA",
+        "opcaoC": "BA",
+        "opcaoD": "XI"
+      }
+    },
+    {
+      "tipo": "Arrasta e Solta",
+      "enunciado": "Como é feito o chocolate?",
+      "resposta": "Cacau",
+      "opcoes": {
+        "opcaoA": "Morango",
+        "opcaoB": "Cacau",
+        "opcaoC": "Abacaxi",
+        "opcaoD": "Pera"
+      }
+    },
+    {
+      "tipo": "Associar",
+      "enunciado": "Associe",
+      "resposta": "opção 1 - opção 3 - opção 2 - opção 4",
+      "opcoes": {
+        "opcaoA": "Carro",
+        "opcaoB": "Maçã",
+        "opcaoC": "Motor",
+        "opcaoD": "Arvore"
+      }
+    },
+    {
+      "tipo": "Jogo da memória",
+      "enunciado": "Ache as cartas certas",
+      "resposta": "opção 1 - opção 3 - opção 2 - opção 4",
+      "opcoes": {
+        "opcaoA": "2 + 2",
+        "opcaoB": "4 + 4",
+        "opcaoC": 4,
+        "opcaoD": 8
+      }
     }
   ]
 }
