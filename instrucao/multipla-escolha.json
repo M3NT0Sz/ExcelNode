@@ -1,0 +1,45 @@
+{
+	"id": "88620",
+	"tipo": "multipla-escolha",
+	"contexto": [
+		{
+			"tipo": "texto",
+			"dados": {
+				"html": "Um tipo de microorganismo se multiplica de minuto a minuto, de forma que sua quantidade é duplicada a cada intervalo de tempo. No tempo inicial, de 0 minutos, existiam apenas 1 bactéria, e após 1 minuto, o número de bactérias duplicou, por que 1 bactéria se dividiu em 2. Observe a tabela construída com a quantidade de bactérias após cada intervalo de tempo:",
+				"audio": "",
+				"centralizado": "false"
+			}
+		}
+	],
+	"alternativas": [
+		{
+			"id": "A",
+			"item": "42 bactérias e 56 bactérias.",
+			"distrator": "",
+			"resposta": "incorreta"
+		},
+		{
+			"id": "B",
+			"item": "32 bactérias e 64 bactérias.",
+			"distrator": "",
+			"resposta": "correta"
+		},
+		{
+			"id": "C",
+			"item": "18 bactérias e 32 bactérias.",
+			"distrator": "",
+			"resposta": "incorreta"
+		},
+		{
+			"id": "D",
+			"item": "24 bactérias e 36 bactérias.",
+			"distrator": "",
+			"resposta": "incorreta"
+		}
+	],
+	"feedback": {
+		"tipo": "opcao3",
+		"dados": {}
+	},
+	"is-professor": "false"
+}

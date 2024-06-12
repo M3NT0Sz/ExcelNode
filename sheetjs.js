@@ -38,7 +38,7 @@ async function excelToJson(excelFilePath, jsonFilePath) {
     const worksheet = workbook.getWorksheet(1); // Obter a primeira planilha
     const jsonData = { licao: [] };
 
-    // Iterar sobre as linhas da planilha, começando da segunda linha para evitar a primeira linha (cabeçalho)
+    // Iterar sobre as linhas da planilha, começando da segunda linha para evitar a primeira linha
     for (let i = 2; i <= worksheet.rowCount; i++) {
       const row = worksheet.getRow(i);
       const tipo = row.getCell(1).value;

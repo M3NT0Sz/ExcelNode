@@ -13,7 +13,7 @@
     },
     {
       "tipo": "Preenchimento",
-      "enunciado": "Traduza pineapple?",
+      "enunciado": "😜",
       "resposta": "Abacaxi"
     },
     {
@@ -41,7 +41,7 @@
     {
       "tipo": "Associar",
       "enunciado": "Associe",
-      "resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4",
+      "resposta": "Opção 1 - Opção 3 | Opção 2 - Opção 4",
       "opcoes": {
         "opcaoA": "Carro",
         "opcaoB": "Maça",

@@ -1,0 +1,21 @@
+{
+	"id": "80316",
+	"tipo": "preenchimento",
+	"contexto": [
+		{
+			"tipo": "texto",
+			"dados": {
+				"html": "Um tipo de microorganismo se multiplica da seguinte forma: 1 célula do microorganismo se multiploica em 3 a cada intervalo de tempo Observe o esquema a seguir, que ilustra esse processo de divisão celular. Quando um cientista analisou a multiplicação desse microorganismo, ele percebeu que o número de microorganismos aumenta conforme uma potência de base 3 elevado ao intervalo de tempo.",
+				"audio": "",
+				"centralizado": "false"
+			}
+		}
+	],
+	"resposta-correta": ["27"],
+	"case-sensitive": "false",
+	"feedback": {
+		"tipo": "opcao3",
+		"dados": {}
+	},
+	"is-professor": "false"
+}

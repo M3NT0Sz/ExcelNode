@@ -1,0 +1,37 @@
+{
+	"id": "80853",
+	"tipo": "clicar-imagem",
+	"contexto": [
+		{
+			"tipo": "texto",
+			"dados": {
+				"html": "Escolha a fruta maior.",
+				"audio": "",
+				"centralizado": "false"
+			}
+		}
+	],
+	"alternativas": [
+		{
+			"id": "A",
+			"img": "paste_996_jp-15993459.jpg",
+			"descricao": "goiaba",
+			"distrator": "",
+			"exibir-descricao": "false",
+			"resposta": "incorreta"
+		},
+		{
+			"id": "B",
+			"img": "paste_867_jp-96728183.jpg",
+			"descricao": "melancia",
+			"distrator": "",
+			"exibir-descricao": "false",
+			"resposta": "correta"
+		}
+	],
+	"feedback": {
+		"tipo": "opcao3",
+		"dados": {}
+	},
+	"is-professor": "false"
+}
