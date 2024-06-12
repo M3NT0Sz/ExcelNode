@@ -50,9 +50,15 @@
       }
     },
     {
-      "tipo": "Jogo da Memoria",
+      "tipo": "Jogo da memória",
       "enunciado": "Ache as cartas certas",
-      "resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4"
+      "resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4",
+      "opcoes": {
+        "opcaoA": "2 + 2",
+        "opcaoB": "4 + 4",
+        "opcaoC": 4,
+        "opcaoD": 8
+      }
     }
   ]
 }
