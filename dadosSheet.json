@@ -41,24 +41,18 @@
     {
       "tipo": "Associar",
       "enunciado": "Associe",
-      "resposta": "opção 1 - opção 3 - opção 2 - opção 4",
+      "resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4",
       "opcoes": {
         "opcaoA": "Carro",
-        "opcaoB": "Maçã",
+        "opcaoB": "Maça",
         "opcaoC": "Motor",
         "opcaoD": "Arvore"
       }
     },
     {
-      "tipo": "Jogo da memória",
+      "tipo": "Jogo da Memoria",
       "enunciado": "Ache as cartas certas",
-      "resposta": "opção 1 - opção 3 - opção 2 - opção 4",
-      "opcoes": {
-        "opcaoA": "2 + 2",
-        "opcaoB": "4 + 4",
-        "opcaoC": 4,
-        "opcaoD": 8
-      }
+      "resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4"
     }
   ]
 }
