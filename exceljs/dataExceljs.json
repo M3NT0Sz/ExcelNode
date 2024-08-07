@@ -19,7 +19,7 @@
   },
   {
     "Tipo": "Preenchimento",
-    "Enunciado": "Traduza pineapple?",
+    "Enunciado": "😜",
     "Resposta": "Abacaxi",
     "OpcaoA": null,
     "OpcaoB": null,
@@ -36,12 +36,30 @@
     "OpcaoD": "XI"
   },
   {
-    "Tipo": "Selecionar Imagem",
-    "Enunciado": "Selecione a Imagem",
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null
+    "Tipo": "Arrasta e Solta",
+    "Enunciado": "Como é feito o chocolate?",
+    "Resposta": "Cacau",
+    "OpcaoA": "Morango",
+    "OpcaoB": "Cacau",
+    "OpcaoC": "Abacaxi",
+    "OpcaoD": "Pera"
+  },
+  {
+    "Tipo": "Associar",
+    "Enunciado": "Associe",
+    "Resposta": "Opção 1 - Opção 3 | Opção 2 - Opção 4",
+    "OpcaoA": "Carro",
+    "OpcaoB": "Maça",
+    "OpcaoC": "Motor",
+    "OpcaoD": "Arvore"
+  },
+  {
+    "Tipo": "Jogo da memória",
+    "Enunciado": "Ache as cartas certas",
+    "Resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4",
+    "OpcaoA": "2 + 2",
+    "OpcaoB": "4 + 4",
+    "OpcaoC": 4,
+    "OpcaoD": 8
   }
 ]

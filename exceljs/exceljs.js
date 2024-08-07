@@ -60,4 +60,4 @@ function getImageProperty(rowData) {
 }
 
 // Chama a função
-excelToJson('ModeloCreatorAuthor.xlsx', 'Planilha1').catch(console.error);
+excelToJson('../ModeloCreatorAuthor.xlsx', 'Planilha1').catch(console.error);
