@@ -15,11 +15,12 @@
     "OpcaoA": 2,
     "OpcaoB": 4,
     "OpcaoC": 6,
-    "OpcaoD": 8
+    "OpcaoD": 8,
+    "Imagem": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_3_1.image1.jpg"
   },
   {
     "Tipo": "Preenchimento",
-    "Enunciado": "Traduza pineapple?",
+    "Enunciado": null,
     "Resposta": "Abacaxi",
     "OpcaoA": null,
     "OpcaoB": null,
@@ -36,8 +37,53 @@
     "OpcaoD": "XI"
   },
   {
-    "Tipo": "Selecionar Imagem",
-    "Enunciado": "Selecione a Imagem",
+    "Tipo": "Arrasta e Solta",
+    "Enunciado": "Como é feito o chocolate?",
+    "Resposta": "Cacau",
+    "OpcaoA": "Morango",
+    "OpcaoB": "Cacau",
+    "OpcaoC": "Abacaxi",
+    "OpcaoD": "Pera"
+  },
+  {
+    "Tipo": "Associar",
+    "Enunciado": "Associe",
+    "Resposta": "Opção 1 - Opção 3 | Opção 2 - Opção 4",
+    "OpcaoA": "Carro",
+    "OpcaoB": "Maça",
+    "OpcaoC": "Motor",
+    "OpcaoD": "Arvore"
+  },
+  {
+    "Tipo": "Jogo da memória",
+    "Enunciado": "Ache as cartas certas",
+    "Resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4",
+    "OpcaoA": "2 + 2",
+    "OpcaoB": "4 + 4",
+    "OpcaoC": 4,
+    "OpcaoD": 8
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
     "Resposta": null,
     "OpcaoA": null,
     "OpcaoB": null,
