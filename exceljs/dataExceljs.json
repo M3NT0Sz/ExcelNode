@@ -15,11 +15,16 @@
     "OpcaoA": 2,
     "OpcaoB": 4,
     "OpcaoC": 6,
-    "OpcaoD": 8
+    "OpcaoD": 8,
+    "Imagem": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_3_1.image1.jpg"
   },
   {
     "Tipo": "Preenchimento",
+<<<<<<< HEAD
     "Enunciado": "😜",
+=======
+    "Enunciado": null,
+>>>>>>> 8a71dad04c7b4ee14cc43ab6eb1f66901f55b087
     "Resposta": "Abacaxi",
     "OpcaoA": null,
     "OpcaoB": null,
@@ -61,5 +66,35 @@
     "OpcaoB": "4 + 4",
     "OpcaoC": 4,
     "OpcaoD": 8
+<<<<<<< HEAD
+=======
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null
+>>>>>>> 8a71dad04c7b4ee14cc43ab6eb1f66901f55b087
   }
 ]
