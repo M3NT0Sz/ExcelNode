@@ -6,68 +6,45 @@
     "OpcaoA": "Opção A",
     "OpcaoB": "Opção B",
     "OpcaoC": "Opção C",
-    "OpcaoD": "Opção D"
+    "OpcaoD": "Opção D",
+    "Imagens": {}
   },
   {
     "Tipo": "Multipla Escolha",
     "Enunciado": "Quanto é 2 + 2?",
-    "Resposta": "B",
+    "Resposta": null,
     "OpcaoA": 2,
     "OpcaoB": 4,
     "OpcaoC": 6,
     "OpcaoD": 8,
-    "Imagem": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_3_1.image1.jpg"
+    "Imagens": {
+      "Coluna3": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_3_2.image4.jpeg"
+    }
   },
   {
     "Tipo": "Preenchimento",
-<<<<<<< HEAD
-    "Enunciado": "😜",
-=======
     "Enunciado": null,
->>>>>>> 8a71dad04c7b4ee14cc43ab6eb1f66901f55b087
     "Resposta": "Abacaxi",
     "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null
+    "OpcaoB": "dsaas",
+    "OpcaoC": "asdsad",
+    "OpcaoD": "asda",
+    "Imagens": {
+      "Coluna4": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_4_3.image1.jpeg",
+      "Coluna2": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_4_1.image3.jpeg"
+    }
   },
   {
-    "Tipo": "Organizar",
-    "Enunciado": "Organize a palavra corretamente:",
-    "Resposta": "Abacaxi",
-    "OpcaoA": "A",
-    "OpcaoB": "CA",
-    "OpcaoC": "BA",
-    "OpcaoD": "XI"
-  },
-  {
-    "Tipo": "Arrasta e Solta",
-    "Enunciado": "Como é feito o chocolate?",
-    "Resposta": "Cacau",
-    "OpcaoA": "Morango",
-    "OpcaoB": "Cacau",
-    "OpcaoC": "Abacaxi",
-    "OpcaoD": "Pera"
-  },
-  {
-    "Tipo": "Associar",
-    "Enunciado": "Associe",
-    "Resposta": "Opção 1 - Opção 3 | Opção 2 - Opção 4",
-    "OpcaoA": "Carro",
-    "OpcaoB": "Maça",
-    "OpcaoC": "Motor",
-    "OpcaoD": "Arvore"
-  },
-  {
-    "Tipo": "Jogo da memória",
-    "Enunciado": "Ache as cartas certas",
-    "Resposta": "Opção 1 - Opção 3 - Opção 2 - Opção 4",
-    "OpcaoA": "2 + 2",
-    "OpcaoB": "4 + 4",
-    "OpcaoC": 4,
-    "OpcaoD": 8
-<<<<<<< HEAD
-=======
+    "Tipo": "Multipla Escolha",
+    "Enunciado": "Quanto é 5+5?",
+    "Resposta": 10,
+    "OpcaoA": null,
+    "OpcaoB": 9,
+    "OpcaoC": 10,
+    "OpcaoD": 15,
+    "Imagens": {
+      "Coluna4": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_5_3.image2.jpeg"
+    }
   },
   {
     "Tipo": null,
@@ -76,7 +53,8 @@
     "OpcaoA": null,
     "OpcaoB": null,
     "OpcaoC": null,
-    "OpcaoD": null
+    "OpcaoD": null,
+    "Imagens": {}
   },
   {
     "Tipo": null,
@@ -85,7 +63,8 @@
     "OpcaoA": null,
     "OpcaoB": null,
     "OpcaoC": null,
-    "OpcaoD": null
+    "OpcaoD": null,
+    "Imagens": {}
   },
   {
     "Tipo": null,
@@ -94,7 +73,37 @@
     "OpcaoA": null,
     "OpcaoB": null,
     "OpcaoC": null,
-    "OpcaoD": null
->>>>>>> 8a71dad04c7b4ee14cc43ab6eb1f66901f55b087
+    "OpcaoD": null,
+    "Imagens": {}
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null,
+    "Imagens": {}
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null,
+    "Imagens": {}
+  },
+  {
+    "Tipo": null,
+    "Enunciado": null,
+    "Resposta": null,
+    "OpcaoA": null,
+    "OpcaoB": null,
+    "OpcaoC": null,
+    "OpcaoD": null,
+    "Imagens": {}
   }
 ]
