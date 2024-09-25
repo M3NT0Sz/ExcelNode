@@ -1,0 +1,53 @@
+{
+  "id": "5",
+  "tipo": "Multipla Escolha",
+  "contexto": [
+    {
+      "tipo": "texto",
+      "dados": {
+        "html": "Quanto é 5+5?",
+        "audio": "",
+        "centralizado": "false"
+      }
+    }
+  ],
+  "alternativas": [
+    {
+      "id": "A",
+      "img": "embedded_5_3.image2.jpeg",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "B",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "C",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "D",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    }
+  ],
+  "feedback": {
+    "tipo": "opcao3",
+    "dados": {}
+  },
+  "is-professor": "false"
+}

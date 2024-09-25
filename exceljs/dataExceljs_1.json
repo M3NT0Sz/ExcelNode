@@ -1,0 +1,53 @@
+{
+  "id": "2",
+  "tipo": "Tipo",
+  "contexto": [
+    {
+      "tipo": "texto",
+      "dados": {
+        "html": "Enunciado",
+        "audio": "",
+        "centralizado": "false"
+      }
+    }
+  ],
+  "alternativas": [
+    {
+      "id": "A",
+      "img": "",
+      "descricao": "Opção A",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "incorreta"
+    },
+    {
+      "id": "B",
+      "img": "",
+      "descricao": "Opção B",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "incorreta"
+    },
+    {
+      "id": "C",
+      "img": "",
+      "descricao": "Opção C",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "incorreta"
+    },
+    {
+      "id": "D",
+      "img": "",
+      "descricao": "Opção D",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "incorreta"
+    }
+  ],
+  "feedback": {
+    "tipo": "opcao3",
+    "dados": {}
+  },
+  "is-professor": "false"
+}

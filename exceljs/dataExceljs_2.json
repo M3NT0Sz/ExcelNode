@@ -1,0 +1,53 @@
+{
+  "id": "3",
+  "tipo": "Multipla Escolha",
+  "contexto": [
+    {
+      "tipo": "texto",
+      "dados": {
+        "html": "Quanto é 2 + 2?",
+        "audio": "",
+        "centralizado": "false"
+      }
+    }
+  ],
+  "alternativas": [
+    {
+      "id": "A",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "B",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "C",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "D",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    }
+  ],
+  "feedback": {
+    "tipo": "opcao3",
+    "dados": {}
+  },
+  "is-professor": "false"
+}

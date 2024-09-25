@@ -1,109 +1,214 @@
 [
   {
-    "Tipo": "Tipo",
-    "Enunciado": "Enunciado",
-    "Resposta": "Resposta",
-    "OpcaoA": "Opção A",
-    "OpcaoB": "Opção B",
-    "OpcaoC": "Opção C",
-    "OpcaoD": "Opção D",
-    "Imagens": {}
+    "id": "2",
+    "tipo": "Tipo",
+    "contexto": [
+      {
+        "tipo": "texto",
+        "dados": {
+          "html": "Enunciado",
+          "audio": "",
+          "centralizado": "false"
+        }
+      }
+    ],
+    "alternativas": [
+      {
+        "id": "A",
+        "img": "",
+        "descricao": "Opção A",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "incorreta"
+      },
+      {
+        "id": "B",
+        "img": "",
+        "descricao": "Opção B",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "incorreta"
+      },
+      {
+        "id": "C",
+        "img": "",
+        "descricao": "Opção C",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "incorreta"
+      },
+      {
+        "id": "D",
+        "img": "",
+        "descricao": "Opção D",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "incorreta"
+      }
+    ],
+    "feedback": {
+      "tipo": "opcao3",
+      "dados": {}
+    },
+    "is-professor": "false"
   },
   {
-    "Tipo": "Multipla Escolha",
-    "Enunciado": "Quanto é 2 + 2?",
-    "Resposta": null,
-    "OpcaoA": 2,
-    "OpcaoB": 4,
-    "OpcaoC": 6,
-    "OpcaoD": 8,
-    "Imagens": {
-      "Coluna3": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_3_2.image4.jpeg"
-    }
+    "id": "3",
+    "tipo": "Multipla Escolha",
+    "contexto": [
+      {
+        "tipo": "texto",
+        "dados": {
+          "html": "Quanto é 2 + 2?",
+          "audio": "",
+          "centralizado": "false"
+        }
+      }
+    ],
+    "alternativas": [
+      {
+        "id": "A",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "B",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "C",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "D",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      }
+    ],
+    "feedback": {
+      "tipo": "opcao3",
+      "dados": {}
+    },
+    "is-professor": "false"
   },
   {
-    "Tipo": "Preenchimento",
-    "Enunciado": null,
-    "Resposta": "Abacaxi",
-    "OpcaoA": null,
-    "OpcaoB": "dsaas",
-    "OpcaoC": "asdsad",
-    "OpcaoD": "asda",
-    "Imagens": {
-      "Coluna4": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_4_3.image1.jpeg",
-      "Coluna2": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_4_1.image3.jpeg"
-    }
+    "id": "4",
+    "tipo": "Preenchimento",
+    "contexto": [
+      {
+        "tipo": "texto",
+        "dados": {
+          "html": "batata",
+          "audio": "",
+          "centralizado": "false"
+        }
+      }
+    ],
+    "alternativas": [
+      {
+        "id": "A",
+        "img": "embedded_4_3.image1.jpeg",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "B",
+        "img": "embedded_4_4.image3.jpeg",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "C",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "D",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      }
+    ],
+    "feedback": {
+      "tipo": "opcao3",
+      "dados": {}
+    },
+    "is-professor": "false"
   },
   {
-    "Tipo": "Multipla Escolha",
-    "Enunciado": "Quanto é 5+5?",
-    "Resposta": 10,
-    "OpcaoA": null,
-    "OpcaoB": 9,
-    "OpcaoC": 10,
-    "OpcaoD": 15,
-    "Imagens": {
-      "Coluna4": "C:\\Users\\aluno\\Desktop\\ExcelNode\\exceljs\\embedded_5_3.image2.jpeg"
-    }
-  },
-  {
-    "Tipo": null,
-    "Enunciado": null,
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null,
-    "Imagens": {}
-  },
-  {
-    "Tipo": null,
-    "Enunciado": null,
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null,
-    "Imagens": {}
-  },
-  {
-    "Tipo": null,
-    "Enunciado": null,
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null,
-    "Imagens": {}
-  },
-  {
-    "Tipo": null,
-    "Enunciado": null,
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null,
-    "Imagens": {}
-  },
-  {
-    "Tipo": null,
-    "Enunciado": null,
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null,
-    "Imagens": {}
-  },
-  {
-    "Tipo": null,
-    "Enunciado": null,
-    "Resposta": null,
-    "OpcaoA": null,
-    "OpcaoB": null,
-    "OpcaoC": null,
-    "OpcaoD": null,
-    "Imagens": {}
+    "id": "5",
+    "tipo": "Multipla Escolha",
+    "contexto": [
+      {
+        "tipo": "texto",
+        "dados": {
+          "html": "Quanto é 5+5?",
+          "audio": "",
+          "centralizado": "false"
+        }
+      }
+    ],
+    "alternativas": [
+      {
+        "id": "A",
+        "img": "embedded_5_3.image2.jpeg",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "B",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "C",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      },
+      {
+        "id": "D",
+        "img": "",
+        "descricao": "",
+        "distrator": "",
+        "exibir-descricao": "false",
+        "resposta": "correta"
+      }
+    ],
+    "feedback": {
+      "tipo": "opcao3",
+      "dados": {}
+    },
+    "is-professor": "false"
   }
 ]

@@ -1,0 +1,53 @@
+{
+  "id": "4",
+  "tipo": "Preenchimento",
+  "contexto": [
+    {
+      "tipo": "texto",
+      "dados": {
+        "html": "batata",
+        "audio": "",
+        "centralizado": "false"
+      }
+    }
+  ],
+  "alternativas": [
+    {
+      "id": "A",
+      "img": "embedded_4_3.image1.jpeg",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "B",
+      "img": "embedded_4_4.image3.jpeg",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "C",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    },
+    {
+      "id": "D",
+      "img": "",
+      "descricao": "",
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "correta"
+    }
+  ],
+  "feedback": {
+    "tipo": "opcao3",
+    "dados": {}
+  },
+  "is-professor": "false"
+}
