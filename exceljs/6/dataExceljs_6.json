@@ -1,11 +1,11 @@
 {
-  "id": "5",
-  "tipo": "Multipla Escolha",
+  "id": "6",
+  "tipo": "Push",
   "contexto": [
     {
       "tipo": "texto",
       "dados": {
-        "html": "Quanto é 5+5?",
+        "html": "",
         "audio": "",
         "centralizado": "false",
         "img": ""
@@ -16,23 +16,23 @@
     {
       "id": "A",
       "img": "",
-      "descricao": 20,
+      "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "incorreta"
+      "resposta": "correta"
     },
     {
       "id": "B",
       "img": "",
-      "descricao": 9,
+      "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "incorreta"
+      "resposta": "correta"
     },
     {
       "id": "C",
       "img": "",
-      "descricao": 10,
+      "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
       "resposta": "correta"
@@ -40,10 +40,10 @@
     {
       "id": "D",
       "img": "",
-      "descricao": 15,
+      "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "incorreta"
+      "resposta": "correta"
     }
   ],
   "feedback": {

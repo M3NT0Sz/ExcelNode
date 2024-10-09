@@ -8,39 +8,39 @@
         "html": "Quanto é 2 + 2?",
         "audio": "",
         "centralizado": "false",
-        "img": "embedded_3_7.image1.jpeg"
+        "img": ""
       }
     }
   ],
   "alternativas": [
     {
       "id": "A",
-      "img": "",
-      "descricao": 2,
+      "img": "embedded_3_3.jpeg",
+      "descricao": 5,
       "distrator": "",
       "exibir-descricao": "false",
       "resposta": "incorreta"
     },
     {
       "id": "B",
-      "img": "",
+      "img": "embedded_3_4.jpeg",
+      "descricao": 90,
+      "distrator": "",
+      "exibir-descricao": "false",
+      "resposta": "incorreta"
+    },
+    {
+      "id": "C",
+      "img": "embedded_3_5.jpeg",
       "descricao": 4,
       "distrator": "",
       "exibir-descricao": "false",
       "resposta": "correta"
     },
     {
-      "id": "C",
-      "img": "",
-      "descricao": 6,
-      "distrator": "",
-      "exibir-descricao": "false",
-      "resposta": "incorreta"
-    },
-    {
       "id": "D",
-      "img": "",
-      "descricao": 8,
+      "img": "embedded_3_6.jpeg",
+      "descricao": 80,
       "distrator": "",
       "exibir-descricao": "false",
       "resposta": "incorreta"
