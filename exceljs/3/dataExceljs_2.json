@@ -7,7 +7,8 @@
       "dados": {
         "html": "Quanto é 2 + 2?",
         "audio": "",
-        "centralizado": "false"
+        "centralizado": "false",
+        "img": "embedded_3_7.image1.jpeg"
       }
     }
   ],
@@ -15,15 +16,15 @@
     {
       "id": "A",
       "img": "",
-      "descricao": "",
+      "descricao": 2,
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     },
     {
       "id": "B",
       "img": "",
-      "descricao": "",
+      "descricao": 4,
       "distrator": "",
       "exibir-descricao": "false",
       "resposta": "correta"
@@ -31,18 +32,18 @@
     {
       "id": "C",
       "img": "",
-      "descricao": "",
+      "descricao": 6,
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     },
     {
       "id": "D",
       "img": "",
-      "descricao": "",
+      "descricao": 8,
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     }
   ],
   "feedback": {

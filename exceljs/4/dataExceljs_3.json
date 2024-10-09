@@ -1,24 +1,25 @@
 {
-  "id": "5",
-  "tipo": "Multipla Escolha",
+  "id": "4",
+  "tipo": "Preenchimento",
   "contexto": [
     {
       "tipo": "texto",
       "dados": {
-        "html": "Quanto é 5+5?",
+        "html": "amarelo",
         "audio": "",
-        "centralizado": "false"
+        "centralizado": "false",
+        "img": "embedded_4_7.image2.jpeg"
       }
     }
   ],
   "alternativas": [
     {
       "id": "A",
-      "img": "embedded_5_3.image2.jpeg",
+      "img": "",
       "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     },
     {
       "id": "B",
@@ -26,7 +27,7 @@
       "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     },
     {
       "id": "C",
@@ -34,7 +35,7 @@
       "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     },
     {
       "id": "D",
@@ -42,7 +43,7 @@
       "descricao": "",
       "distrator": "",
       "exibir-descricao": "false",
-      "resposta": "correta"
+      "resposta": "incorreta"
     }
   ],
   "feedback": {

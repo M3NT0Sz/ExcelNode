@@ -1,6 +1,6 @@
 const ExcelJS = require("exceljs");
 const fs = require("fs");
-const axios = require("axios");
+const path = require("path");
 
 async function excelToJson(filePath, sheetName) {
     const workbook = new ExcelJS.Workbook();
@@ -77,33 +77,25 @@ async function excelToJson(filePath, sheetName) {
                 "is-professor": "false",
             };
 
-            const imageUrl = row.getCell(8).value;
-            if (imageUrl) {
-                const imageName = `image_${rowNumber}.png`;
-                try {
-                    const imageResponse = await axios.get(imageUrl, {
-                        responseType: "arraybuffer",
-                    });
-                    fs.writeFileSync(imageName, imageResponse.data);
-                    rowData.contexto[0].dados.img = imageName;
-                } catch (error) {
-                    console.error(`Erro ao baixar a imagem ${imageUrl}:`, error.message);
-                }
-            }
+            // Get the last column index
+            const lastColumnIndex = worksheet.columnCount;
 
+            // Check if the last column contains an image
             const images = worksheet.getImages();
             for (const image of images) {
-                if (image.range.tl.nativeRow === rowNumber - 1) {
+                if (image.range.tl.nativeRow === rowNumber - 1 && image.range.tl.nativeCol === lastColumnIndex - 1) {
                     const img = workbook.model.media.find(
                         (m) => m.index === image.imageId
                     );
                     if (img) {
-                        const colIndex = image.range.tl.nativeCol - 3;
-                        if (colIndex >= 0 && colIndex < rowData.alternativas.length) {
-                            const imageFileName = `embedded_${rowNumber}_${image.range.tl.nativeCol}.${img.name}.${img.extension}`;
-                            fs.writeFileSync(imageFileName, img.buffer);
-                            rowData.alternativas[colIndex].img = imageFileName;
+                        const questionDir = path.join(__dirname, rowData.id);
+                        if (!fs.existsSync(questionDir)) {
+                            fs.mkdirSync(questionDir);
                         }
+                        const imageFileName = `embedded_${rowNumber}_${image.range.tl.nativeCol}.${img.name}.${img.extension}`;
+                        const imageFilePath = path.join(questionDir, imageFileName);
+                        fs.writeFileSync(imageFilePath, img.buffer);
+                        rowData.contexto[0].dados.img = imageFileName;
                     }
                 }
             }
@@ -126,13 +118,13 @@ async function excelToJson(filePath, sheetName) {
     }
 
     if (data.length > 0) {
-        const json = JSON.stringify(data, null, 2);
-        fs.writeFileSync("dataExceljs.json", json, "utf8");
-        console.log("Arquivo JSON criado com sucesso!");
-
         data.forEach((rowData, index) => {
+            const questionDir = path.join(__dirname, rowData.id);
+            if (!fs.existsSync(questionDir)) {
+                fs.mkdirSync(questionDir);
+            }
             const json = JSON.stringify(rowData, null, 2);
-            fs.writeFileSync(`dataExceljs_${index + 1}.json`, json, "utf8");
+            fs.writeFileSync(path.join(questionDir, `dataExceljs_${index + 1}.json`), json, "utf8");
 
             // Verificar qual alternativa está correta
             const correctAlternative = rowData.alternativas.find(
